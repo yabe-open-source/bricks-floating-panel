@@ -1,0 +1,77 @@
+.brx-body.main.ykf-brx-floating-panel #bricks-panel .detach-window,
+.brx-body.main.ykf-brx-floating-panel #bricks-structure .detach-window {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 12px;
+    height: 12px;
+    z-index: 1005;
+    opacity: 0.5;
+}
+
+.brx-body.main.ykf-brx-floating-panel #bricks-panel .detach-window:hover,
+.brx-body.main.ykf-brx-floating-panel #bricks-structure .detach-window:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.brx-body.main.ykf-brx-floating-panel .ykf-brx-floating-panel-winbox {
+    z-index: 10001;
+}
+
+.brx-body.main.ykf-brx-floating-panel .ykf-brx-floating-panel-winbox .winbox {
+    margin-top: 40px;
+    height: 35px;
+    background: var(--builder-bg);
+    border: 1px solid var(--builder-border-color);
+}
+
+.brx-body.main.ykf-brx-floating-panel .ykf-brx-floating-panel-winbox .winbox .wb-header {
+    border-bottom: 1px solid var(--builder-border-color);
+}
+
+.brx-body.main.ykf-brx-floating-panel .ykf-brx-floating-panel-winbox .winbox.min {
+    margin-top: 0;
+}
+
+.brx-body.main.ykf-brx-floating-panel .ykf-brx-floating-panel-winbox .winbox #bricks-panel,
+.brx-body.main.ykf-brx-floating-panel .ykf-brx-floating-panel-winbox .winbox #bricks-structure {
+    top: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.brx-body.main.ykf-brx-floating-panel .ykf-brx-floating-panel-winbox .winbox #bricks-panel .detach-window,
+.brx-body.main.ykf-brx-floating-panel .ykf-brx-floating-panel-winbox .winbox #bricks-structure .detach-window {
+    display: none;
+}
+
+.brx-body.main.ykf-brx-floating-panel .ykf-brx-floating-panel-winbox .winbox.winbox-panel .wb-body,
+.brx-body.main.ykf-brx-floating-panel .ykf-brx-floating-panel-winbox .winbox.winbox-structure .wb-body {
+    overflow: hidden;
+}
+
+.brx-body.main.ykf-brx-floating-panel .ykf-brx-floating-panel-winbox .winbox.winbox-structure {
+    display: none;
+}
+
+.brx-body.main.ykf-brx-floating-panel .ykf-brx-floating-panel-winbox .winbox.winbox-panel #bricks-panel-resizable {
+    display: none;
+}
+
+.brx-body.main.ykf-brx-floating-panel .ykf-brx-floating-panel-winbox .winbox .wb-control .wb-layout {
+    color: var(--builder-color);
+    background-size: 14px auto;
+}
+
+.brx-body.main.ykf-brx-floating-panel:has(> #bricks-structure)>#bricks-preview.show-structure {
+    margin-right: 300px;
+}
+
+.brx-body.main.ykf-brx-floating-panel:has(> #bricks-preview.show-structure)>.ykf-brx-floating-panel-winbox .winbox-structure {
+    display: block;
+}
+
+.brx-body.main>#bricks-preview.show-structure {
+    margin-right: 0;
+}
