@@ -4,16 +4,7 @@ import debounce from 'https://esm.sh/lodash-es@4.17.21/debounce';
 import isEqual from 'https://esm.sh/lodash-es@4.17.21/isEqual';
 import onChange from 'https://esm.sh/on-change@4.0.2';
 
-const bricksIframe = window.bricksIframe || document.getElementById('bricks-builder-iframe');
-
-bricksIframe.addEventListener('load', function () {
-    if (window.yabeVueGlobalProp === undefined) {
-        window.yabeVueGlobalProp = document.querySelector('.brx-body').__vue_app__.config.globalProperties;
-        window.yabeVueGlobalPropIframe = bricksIframe.contentDocument.querySelector('.brx-body').__vue_app__.config.globalProperties;
-    }
-
-    init();
-});
+document.getElementById('bricks-builder-iframe').addEventListener('load', init);
 
 const window_svg = `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M432 64H208c-8.8 0-16 7.2-16 16V96H128V80c0-44.2 35.8-80 80-80H432c44.2 0 80 35.8 80 80V304c0 44.2-35.8 80-80 80H416V320h16c8.8 0 16-7.2 16-16V80c0-8.8-7.2-16-16-16zM0 192c0-35.3 28.7-64 64-64H320c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V192zm64 32c0 17.7 14.3 32 32 32H288c17.7 0 32-14.3 32-32s-14.3-32-32-32H96c-17.7 0-32 14.3-32 32z"/></svg>`;
 
