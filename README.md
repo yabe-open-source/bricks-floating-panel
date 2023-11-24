@@ -1,9 +1,9 @@
-# Yabe Ko-fi - Bricks Floating Panel
+# Yabe Open Source - Bricks Floating Panel
 
 <p align="center">
-    <a aria-label="GitHub release (latest by date including pre-releases)" href="https://github.com/yabe-ko-fi/bricks-floating-panel/releases">
+    <a aria-label="GitHub release (latest by date including pre-releases)" href="https://github.com/yabe-open-source/bricks-floating-panel/releases">
         <picture>
-            <img alt="GitHub release" src="https://img.shields.io/github/v/release/yabe-ko-fi/bricks-floating-panel?include_prereleases&logo=github">
+            <img alt="GitHub release" src="https://img.shields.io/github/v/release/yabe-open-source/bricks-floating-panel?include_prereleases&logo=github">
         </picture>
     </a>
     <a aria-label="GitHub Sponsors" href="https://github.com/sponsors/suabahasa">

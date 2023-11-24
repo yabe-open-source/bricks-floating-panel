@@ -68,10 +68,10 @@ const winboxState = {
 
 const featureSession = {
     save() {
-        sessionStorage.setItem('ykf-brx-floating-panel', JSON.stringify(winboxState));
+        sessionStorage.setItem('yos-brx-floating-panel', JSON.stringify(winboxState));
     },
     restore() {
-        const session = sessionStorage.getItem('ykf-brx-floating-panel');
+        const session = sessionStorage.getItem('yos-brx-floating-panel');
 
         if (!session) {
             return;
@@ -92,7 +92,7 @@ const watchedWinboxState = onChange(winboxState, () => {
 
 function init() {
     bricksBody = document.querySelector('div.brx-body.main');
-    bricksBody.classList.add('ykf-brx-floating-panel');
+    bricksBody.classList.add('yos-brx-floating-panel');
 
     toolbar = document.querySelector('#bricks-toolbar');
     panel = document.querySelector(panelSelector);
@@ -100,7 +100,7 @@ function init() {
     structure = document.querySelector(structureSelector);
 
     winboxRoot = document.createElement('div');
-    winboxRoot.classList.add('ykf-brx-floating-panel-winbox');
+    winboxRoot.classList.add('yos-brx-floating-panel-winbox');
     bricksBody.appendChild(winboxRoot);
 
     winboxOptions.root = winboxRoot;
